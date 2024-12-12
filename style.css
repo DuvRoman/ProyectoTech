@@ -1,0 +1,201 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    background-color: #00ffaa ;
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+    font-family: sans-serif ;
+    margin: 10px auto;
+}
+body{
+    width: 100%;
+    max-width: 1200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+header .encabezado{
+    border-radius: 10px;
+    background-color: aliceblue;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120px;
+    width: 100%;
+    max-width: 1200px;
+    position: fixed;
+    border:5px solid rgb(255, 255, 255);
+    border-style:double;
+    
+   
+}
+.logo img{
+    width: 100px;
+    height: 100px;
+    border: 2px solid greenyellow;
+    border-radius: 100%;
+    display: flex;
+    position: absolute;
+    bottom: 7px;
+    left: 13px;
+}
+.nav2{
+    color: white;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    position: absolute;
+    bottom: 50px;
+    left: 282px;
+}
+button{
+    color: aliceblue;
+    background-color: #00ffaa;
+    width: 200px;
+    height: 50px;
+    margin: 5px;
+    border-radius: 15px;
+    font-size: 1.3rem ;
+    box-shadow: 2px 2px 2px 2px rgb(155, 155, 155);
+}
+button:hover{
+    animation:scale-up-horizontal-center 0.4s;
+    animation-duration: 1s;       
+    animation-delay: 0.4s;
+} 
+@keyframes scale-up-horizontal-center{
+    0%{transform:scaleX(.2)}100%{transform:scaleX(1)}
+}
+main{
+    min-height: 70vh;
+    padding: 130px 0px ;
+    padding-bottom: 0px;
+}
+.dos img{
+    border-radius: 10px;
+    width: 100%;
+}
+.tres{
+    padding: 10px;
+    border-radius: 10px ;
+    background-color: aliceblue;
+    text-align: center;
+    max-height: 40vh;
+    border: 2px solid whitesmoke;
+}
+.cuatro{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: aliceblue;
+    text-align: center;
+    max-height: 40vh;
+    border: 2px solid whitesmoke;
+}
+h3{
+    color: #00ffaa; 
+}
+.cinco img{
+    border-block: 5px solid greenyellow;
+    border-radius: 10px;
+    width: 100%;
+    max-height: 70vh;
+
+}
+.seis img{
+    border-radius: 10px;
+    width: 100%;
+    max-height: 300vh;
+
+}
+
+.siete1{
+    border-block: 5px solid greenyellow;
+    padding: 10px;
+    margin-block: 3px;
+    text-align: center;
+    justify-items: center;
+}
+.siete1 button{
+    background-color: greenyellow;
+    margin: 20px;
+    color: black;
+}
+
+
+footer{
+    margin: 15px;
+    background-color: rgb(47, 255, 193);
+    color: rgb(255, 255, 255);
+    font-size: .875rem;
+    text-align: center;
+}
+
+footer a{
+    color: rgb(168, 168, 168);
+}
+footer img{
+    width: 40px;
+    padding: 2px;
+}
+footer p{
+    text-align: center;
+}
+
+@media (max-width: 900px){
+    nav{
+        display: flex;
+        flex-direction: row;  
+        left: 14px;
+        bottom: 30px;
+        
+          
+    }
+    nav a{
+        width:10%;
+        margin: 2px;
+        font-size: 15px;
+        
+        
+       
+    }
+   
+    button{
+        position: relative;
+        width:110px;
+        height: 55px;
+        margin: 3px;
+        left: -160px;
+        bottom: 0px;   
+         
+}
+}
+@media (max-width: 576px){
+    nav{
+        display: flex;
+        flex-direction: row;  
+        left: 14px;
+        bottom: 30px;
+        
+          
+    }
+    nav a{
+        width:10%;
+        margin: 2px;
+        font-size: 11px;
+        
+        
+       
+    }
+   
+    button{
+        position: relative;
+        width:75px;
+        margin: 3px;
+        left: -160px;
+        bottom: 0px;   
+         
+}
+}
